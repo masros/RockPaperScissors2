@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:id="@+id/L01"
+        android:hapticFeedbackEnabled="false">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:id="@+id/imageView5"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:src="@drawable/ro" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:id="@+id/imageView6"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:src="@drawable/tikw_blank" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/result"
+                android:id="@+id/textView8"
+                android:layout_row="1"
+                android:layout_column="3" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:id="@+id/imageView7"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:src="@drawable/tikw_blank" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:id="@+id/imageView8"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:src="@drawable/hu" />
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/f1">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sv" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/l_dakheli"></LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:id="@+id/btn_result_ok"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+</LinearLayout>
